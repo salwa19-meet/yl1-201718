@@ -1,28 +1,44 @@
+from turtle import *
 import turtle
-#turtle.pendown()
-#turtle.pencolor("blue")
-#turtle.goto(-100,-100)
-#turtle.pencolor("red")
-#turtle.goto(0,150)
-#turtle.pencolor("green")
-#turtle.goto(100,-100)
-#turtle.pencolor("pink")
-#turtle.goto(-100,100)
-#turtle.pencolor("purple")
-#turtle.goto(100,100)
-#turtle.pencolor("yellow")
-#turtle.goto(0,0)
-
-#turtle.register_shape("salwa",((50,0),(0,50),(0,100),(100,100),(100,50),(50,0)))
-#turtle.shape("salwa")
-
-
-import turtle
+import random 
+colormode(255)
+'''
 turtle.penup()
 turtle.goto(0,50)
 turtle.pendown()
 turtle.goto(100,50)
 turtle.goto(150,25)
-turtle.goto(100,0)
-turtle.goto(0,50)
+turtle.penup()
+turtle.mainloop()'''
+
+
+
+turtle.pendown()
+turtle.forward(100)
+turtle.right(45)
+turtle.forward(50)
+turtle.right(90)
+turtle.forward(25)
+
+turtle.speed(0)
+for i in range(360):
+	turtle.right(i)
+	turtle.pendown()
+	r = random.randint(0, 255)
+	g = random.randint(0, 255)
+	b = random.randint(0, 255)
+	turtle.color(r,g,b)
+	turtle.forward(100)
+	turtle.right(45)
+	turtle.forward(50)
+	turtle.right(90)
+	turtle.forward(25)
+	turtle.home()
+	
+
+
+	turtle.right(1)
+
+
+
 turtle.mainloop()

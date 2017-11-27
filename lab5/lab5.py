@@ -25,7 +25,7 @@ class Hexagon(Turtle):
 		Turtle.__init__(self)
 		self.begin_poly()
 		self.color(color)
-		self.speed('slow')
+		self.speed('slow')ee
 		self.begin_fill()
 		for i in range(6):
 
